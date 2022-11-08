@@ -10,6 +10,8 @@ import InputText from 'primevue/inputtext'
 import Toast from 'primevue/toast'
 import ToastService from 'primevue/toastservice'
 import Menubar from 'primevue/menubar';
+import Card from 'primevue/card';
+import Carousel from 'primevue/carousel';
 
 import './assets/app.css'
 import 'primevue/resources/themes/vela-green/theme.css' //theme
@@ -27,5 +29,7 @@ app.component('Button', Button)
 app.component('InputText', InputText)
 app.component('Toast', Toast)
 app.component('Menubar', Menubar)
+app.component('Card', Card)
+app.component('Carousel', Carousel)
 
 app.mount('#app')

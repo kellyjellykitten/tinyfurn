@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useToast } from "primevue/usetoast"
+import Carousel from '../components/Carousel.vue'
 
 const text = ref();
 const toast = useToast();
@@ -10,22 +11,17 @@ const greet = () => {
 </script>
 
 <template>
+  <h2 class="greet">Welcome to TinyFurn!</h2>
   <Toast></Toast>
-  <div class="container">
-    <span class="p-float-label p-input-filled" style="margin-right:1rem">
-      <InputText id="txt" type="text" v-model="value" />
-      <label for="txt">Text</label>
-    </span>
-    <Button label="Greet" @click="greet" icon="pi pi-user"></Button>
+  <Button label="Greet" @click="greet" icon="pi pi-user"></Button>
+  <div>
+    <Carousel />
   </div>
 </template>
 
 <style scoped>
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+.greet {
+    text-align: center;
 }
 </style>
 
