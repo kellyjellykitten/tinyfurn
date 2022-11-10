@@ -19,6 +19,7 @@ const items = ref([
         {
             label:'Chairs',
             icon:'pi pi-fw pi-tag',
+            to: '/chairs',
             items:[
                 {
                     label:'Stools'
@@ -36,15 +37,18 @@ const items = ref([
         },
         {
             label:'Sofas',
-            icon:'pi pi-fw pi-truck'
+            icon:'pi pi-fw pi-truck',
+            to: '/sofas'
         },
         {
             label:'Beds',
-            icon:'pi pi-fw pi-moon'
+            icon:'pi pi-fw pi-moon',
+            to: '/beds'
         },
         {
             label:'Tables',
             icon:'pi pi-fw pi-table',
+            to: '/tables',
             items:[
                 {
                     label:'Kitchen'
@@ -62,17 +66,20 @@ const items = ref([
         },
         {
             label:'Bookcases',
-            icon:'pi pi-fw pi-book'
+            icon:'pi pi-fw pi-book',
+            to: '/bookcases'
         },
         {
             label:'Outdoor',
-            icon:'pi pi-fw pi-sun'
+            icon:'pi pi-fw pi-sun',
+            to: '/outdoor'
         }
         ]
     },
     {
         label:'Sales',
-        icon:'pi pi-fw pi-dollar'
+        icon:'pi pi-fw pi-dollar',
+        to: '/sales'
     },
     {
         label:'Cart',
@@ -89,7 +96,7 @@ const items = ref([
     <div>
         <Menubar :model="items">
             <template #start>
-                <img alt="logo" src="https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png" height="40" class="mr-2">
+                <img alt="logo" src="../assets/textlogo.png" height="50" class="mr-2">
             </template>
             <template #end>
                 <span class="p-input-icon-left">

@@ -1,13 +1,13 @@
 {
     "data": [
         {"id": "1000","name": "Antique Throne","description": "Giltwood antique throne with faux black leather upholstery. With elaborate carvings and scrolled arms, this throne is worthy for only the most regal of critters.","image": "throne.png","price": 250},
-        {"id": "1001","name": "Velvet Chaise","description": "Perfect for any animal smaller than a labrador, this chaise lounge features soft purple velvet upholstery and wooden peg legs strong enough to support a human.","image": "chaise.png","price": 155},
-        {"id": "1002","name": "Vintage Treat Table","description": "Set out your favorite treats on this vintage wood table complete with carved elephant bases. Ivorybody will envy such a display!","image": "table.png","price": 195},
-        {"id": "1003","name": "Painted Wood Bed","description": "Expertly crafted wooden bed with painted sides of white and pink and hearts along the side. Guaranteed sweet dreams for all small animals!","image": "bed.png","price": 80},
-        {"id": "1004","name": "Dino Bookcase","description": "Product Description","image": "bookcase.png","price": 65},
-        {"id": "1005","name": "Outdoor Canopy Bed","description": "Product Description","image": "outdoor.png","price": 120},
-        {"id": "1006","name": "19th Century Bench","description": "Product Description","image": "bench.png","price": 32},
-        {"id": "1007","name": "Bone Toy Box","description": "Product Description","image": "box.png","price": 18},
-        {"id": "1008","name": "Floral Sofa","description": "Product Description","image": "sofa.png","price": 99}
+        {"id": "1001","name": "Velvet Chaise","description": "Perfect for any animal smaller than a great dane, this hand-carved teak chaise lounge features soft red velvet upholstery.","image": "chaise.png","price": 155},
+        {"id": "1002","name": "Elephant Treat Table","description": "Set out your favorite treats on this vintage wood table complete with carved elephant bases. Ivorybody will envy such a display!","image": "table.png","price": 195},
+        {"id": "1003","name": "1800s Walnut Bed","description": "This carved walnut bed has an additional cushioned canopy to accomate multiple critters of different sizes for guaranteed sweet dreams.","image": "bed.png","price": 80},
+        {"id": "1004","name": "Mahogany Bookcase","description": "Circa 1770, this George III bookcase displays your favorite books in true 18th Century style with gilt-wired central door and brass handles.","image": "bookcase.png","price": 345},
+        {"id": "1005","name": "Outdoor Sunball Chair","description": "Lounge comfortably in this groovy '60s swivel chair designed by Ris & Selldorf with an adjustable fiberglass canopy and weather-resistant upholstery.","image": "outdoor.png","price": 120},
+        {"id": "1006","name": "19th Century Bench","description": "With corkscrew legs and columns carved from walnut and upholstered in linen, this French bench is perfect for smaller pets.","image": "bench.png","price": 32},
+        {"id": "1007","name": "Whiskey Barrel Toy Box","description": "Repurposed whiskey barrel to store lots of your favorite toys! Toys in the picture ARE included as an extra bonus!","image": "box.png","price": 18},
+        {"id": "1008","name": "Floral Sofa","description": "Floral sofa dating from the 1950s. Features a low seat lined with floral fabric and intricately carved wood accents.","image": "sofa.png","price": 99}
     ]
 }

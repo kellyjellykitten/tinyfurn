@@ -1,0 +1,70 @@
+{
+    "chairs": [
+        {
+            "id": 1,
+            "name": "chair 1",
+            "description": "description 1",
+            "image": "chair1.png",
+            "price": 100,
+            "rating": 1
+        },
+        {
+            "id": 2,
+            "name": "chair 2",
+            "description": "description 2",
+            "image": "chair2.png",
+            "price": 200,
+            "rating": 2
+        }
+    ],
+    "sofas": [
+        {
+            "id": 1,
+            "name": "sofa 1",
+            "description": "description 1",
+            "image": "sofa1.png",
+            "price": 100,
+            "rating": 1
+        }
+    ],
+    "beds": [
+        {
+            "id": 1,
+            "name":"bed 1",
+            "description": "description 1",
+            "image": "bed1.png",
+            "price": 100,
+            "rating": 1
+        }
+    ],
+    "tables": [
+        {
+            "id": 1,
+            "name": "table 1",
+            "description":"description 1",
+            "image": "table1.png",
+            "price": 100,
+            "rating": 1
+        }
+    ],
+    "bookcases": [
+        {
+            "id": 1,
+            "name": "bookcase 1",
+            "description": "description 1",
+            "image": "bookcase1.png",
+            "price": 100,
+            "rating": 1
+        }
+    ],
+    "outdoor": [
+        {
+            "id": 1,
+            "name": "outdoor 1",
+            "description":"description 1",
+            "image": "outdoor1.png",
+            "price": 100,
+            "rating": 1
+        }
+    ]
+}

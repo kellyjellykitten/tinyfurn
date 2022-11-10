@@ -46,7 +46,7 @@ const addCart = () => {
         <div class="card">
             <Carousel :value="products" :numVisible="3" :numScroll="3" :responsiveOptions="responsiveOptions">
                 <template #header>
-                    <h2 class="feature">Featured Products</h2>
+                    <h2 class="feature">This Week's Vintage Finds!</h2>
                 </template>
                 <template #item="slotProps">
                     <div class="product-item">
