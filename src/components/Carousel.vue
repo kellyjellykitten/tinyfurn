@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useToast } from "primevue/usetoast"
 import ProductService from '../ProductService'
+
 
 const products = ref(null);
 const productService = ref(new ProductService());
@@ -26,6 +28,17 @@ onMounted(() => {
     productService.value.getProductsSmall().then(data => products.value = data.slice(0,9));
 })
 
+const toast = useToast()
+const addFavorite = () => {
+    console.log('Clicked favorite')
+    toast.add({severity:'success', summary: 'Added to Favorites', life: 5000})
+}
+
+const addCart = () => {
+    console.log('Clicked add to cart')
+    toast.add({severity:'success', summary:'Added to cart', life: 5000})
+}
+
 </script>
 
 <template>
@@ -39,15 +52,16 @@ onMounted(() => {
                     <div class="product-item">
                         <div class="product-item-content">
                             <div class="mb-3">
-                                <img src="https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png" :alt="slotProps.data.name" class="product-image" />
+                                <img :src="'assets/' + slotProps.data.image" :alt="slotProps.data.name" class="product-image" />
                             </div>
                             <div>
                                 <h3 class="mb-1">{{slotProps.data.name}}</h3>
                                 <h4 class="mt-0 mb-3">${{slotProps.data.price}}</h4>
                                 <h5>{{slotProps.data.description}}</h5>
                                 <div class="car-buttons mt-5">
-                                    <Button icon="pi pi-heart" title="Favorite" class="p-button-danger p-button-outlined p-button-rounded mr-2" />
-                                    <Button icon="pi pi-cart-plus" title="Add to Cart" class="p-button-success p-button-outlined p-button-rounded" />
+                                    <Toast />
+                                    <Button icon="pi pi-heart" @click="addFavorite" title="Favorite" class="p-button-danger p-button-outlined p-button p-button-rounded mr-2" />
+                                    <Button icon="pi pi-cart-plus" @click="addCart" title="Add to Cart" class="p-button-success p-button-outlined p-button-rounded mr-2" />
                                 </div>
                             </div>
                         </div>
@@ -68,7 +82,7 @@ onMounted(() => {
         padding: 2rem 0;
     }
     .product-image {
-        width: 50%;
+        width: 55%;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
     }
 }
